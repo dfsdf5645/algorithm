@@ -1,12 +1,23 @@
 import sys
 input = sys.stdin.readline
 
-T = int(input()) #3
+T = int(input())
 
-for i in range(T): #0, 1, 2
-    l = list(map(int, input().split())) #4 5 6 쪼개 4,5,6 
+for i in range(T):
+    l = list(map(int, input().split()))
     # A, B, C, D = map(int, input().rstrip().split())
 print(l)
+#------------------------------------------
+# 이러면 중첩리스트로 안들어감;; append 쓰면 리스트 속 리스트 됨
+T = int(input())
+
+a = []
+for i in range(T):
+    a += input().split()
+#------------------------------------------
+#리스트 안에 든거 그냥 한줄씩 빼오기
+for word in b:
+    print(word)
 #------------------------------------------
 # T = int(input())
 # for test_case in range(1, T+1):
