@@ -1,3 +1,4 @@
+#UCPC 약자
 import sys
 input = sys.stdin.readline
 words = input()
