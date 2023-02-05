@@ -10,14 +10,19 @@ count = 0
 for num in line:
     if num == 1:
         continue
-    if num == 2:
-        count += 1
+    for i in range(2, num):
+        if num % i == 0:
+            break
     else:
-        div = []
-        for idx in range(2, num):
-            if num % idx != 0:
-                div.append(idx) #나머지가 0이 아닌 나눔수들(2, 자기자신 제외)
-                if len(div) == num - 2:
-                    count += 1
+        count += 1
+    # if num == 2:
+    #     count += 1
+    # else:
+    #     div = []
+    #     for idx in range(2, num):
+    #         if num % idx != 0:
+    #             div.append(idx) #나머지가 0이 아닌 나눔수들(2, 자기자신 제외)
+    #             if len(div) == num - 2:
+    #                 count += 1
 
 print(count)

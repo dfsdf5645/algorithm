@@ -10,3 +10,4 @@ for i in range(div_5, -1, -1):          #거기서부터 하나씩 내려가면�
         break
 else:                                   #for문 다 도는동안 break를 만나지않는다면
     print(-1)                           #-1
+    
